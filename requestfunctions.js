@@ -199,7 +199,7 @@ function updateDateTime(timestamp, timezoneOffset) {
     let cardBg = document.querySelector(":root");
     cardBg.style.setProperty("--cards-bg", "rgba(220, 220, 220, 0.25)");
   } else {
-    wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.275), url('./Assets/night.png')";
+    wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.275)), url('./Assets/night.png')";
     // wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/night.jpg')";
     //changing the hexcode of var(--text-color) to white
     let textColor = document.querySelector(":root");
