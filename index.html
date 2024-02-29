@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpleWeather.</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./Assets/02d.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">simpleWeather.</div>
+
+      <div class="dateAndTimeParent">
+        <div class="time">..</div>
+        <div class="date">..</div>
+      </div>
+
+      <div class="searchLocationParent">
+        <button class="searchBtn">
+          <svg class="searchIcon" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" /></svg>
+        </button>
+
+        <input type="text" class="searchLocation" placeholder="New Delhi, India" />
+      </div>
+    </nav>
+
+    <main>
+      <div class="mainWeatherParent">
+        <img height="340px" src="./Assets/icons/snowy rainly clouds.png" alt="" class="todayWeatherIcon" />
+        <div class="todayWeatherSummary">
+          <p class="headline">Currently in New Delhi</p>
+          <h2 class="todayDescription">..</h2>
+          <p><span class="todayTemp">..</span> celsius</p>
+          <p>and it feels like <span class="todayFeelsLike">..</span></p>
+        </div>
+      </div>
+
+      <div class="detailsWeatherParent">
+        <div class="temperatureParent">
+          <div class="detailsCard">
+            <div class="detailsIcon">
+              <img src="./Assets/icons/low temp.png" alt="" />
+            </div>
+
+            <div class="detailsText">
+              <div id="minTemp" class="detailsValue">..</div>
+              <div class="detailsTitle">Minimum</div>
+            </div>
+          </div>
+          <div class="detailsCard">
+            <div class="detailsIcon">
+              <img src="./Assets/icons/high temp.png" alt="" />
+            </div>
+
+            <div class="detailsText">
+              <div id="maxTemp" class="detailsValue">..</div>
+              <div class="detailsTitle">Maximum</div>
+            </div>
+          </div>
+        </div>
+        <div class="otherParent">
+          <div class="detailsCard">
+            <div class="detailsIcon">
+              <img src="./Assets/icons/water drops.png" alt="" />
+            </div>
+
+            <div class="detailsText">
+              <div id="humidity" class="detailsValue">..</div>
+              <div class="detailsTitle">Humidity</div>
+            </div>
+          </div>
+          <div class="detailsCard">
+            <div class="detailsIcon">
+              <img src="./Assets/icons/hazy.png" alt="" />
+            </div>
+
+            <div class="detailsText">
+              <div id="windSpeed" class="detailsValue">..</div>
+              <div class="detailsTitle">Wind Speed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="forecastCard" id="day1">
+        <div class="forecastIcon">
+          <img src="./Assets/01d.png" alt="" />
+        </div>
+        <div class="forecastTemp">..</div>
+        <div class="forecastDescription">..</div>
+        <div class="forecastDay">..</div>
+      </div>
+      <div class="forecastCard" id="day2">
+        <div class="forecastIcon">
+          <img src="./Assets/01d.png" alt="" />
+        </div>
+        <div class="forecastTemp">..</div>
+        <div class="forecastDescription">..</div>
+        <div class="forecastDay">..</div>
+      </div>
+      <div class="forecastCard" id="day3">
+        <div class="forecastIcon">
+          <img src="./Assets/01d.png" alt="" />
+        </div>
+        <div class="forecastTemp">..</div>
+        <div class="forecastDescription">..</div>
+        <div class="forecastDay">..</div>
+      </div>
+      <div class="forecastCard" id="day4">
+        <div class="forecastIcon">
+          <img src="./Assets/01d.png" alt="" />
+        </div>
+        <div class="forecastTemp">..</div>
+        <div class="forecastDescription">..</div>
+        <div class="forecastDay">..</div>
+      </div>
+      <div class="forecastCard" id="day5">
+        <div class="forecastIcon">
+          <img src="./Assets/01d.png" alt="" />
+        </div>
+        <div class="forecastTemp">..</div>
+        <div class="forecastDescription">..</div>
+        <div class="forecastDay">..</div>
+      </div>
+    </footer>
+
+    <script src="./requestfunctions.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
