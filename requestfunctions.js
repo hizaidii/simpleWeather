@@ -179,28 +179,24 @@ function updateDateTime(timestamp, timezoneOffset) {
 
   if (hours2 >= 6 && hours2 < 10) {
     wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./Assets/dawn.png')";
-    // wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/dawn.jpg')";
     let textColor = document.querySelector(":root");
     textColor.style.setProperty("--text", "#2c2c2c");
     let cardBg = document.querySelector(":root");
     cardBg.style.setProperty("--cards-bg", "rgba(220, 220, 220, 0.25)");
   } else if (hours2 >= 10 && hours2 < 16) {
     wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./Assets/day.png')";
-    // wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/day.jpg')";
     let textColor = document.querySelector(":root");
     textColor.style.setProperty("--text", "#2c2c2c");
     let cardBg = document.querySelector(":root");
     cardBg.style.setProperty("--cards-bg", "rgba(220, 220, 220, 0.25)");
   } else if (hours2 >= 16 && hours2 < 23) {
     wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./Assets/dusk.png')";
-    // wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/dusk.jpg')";
     let textColor = document.querySelector(":root");
     textColor.style.setProperty("--text", "#2c2c2c");
     let cardBg = document.querySelector(":root");
     cardBg.style.setProperty("--cards-bg", "rgba(220, 220, 220, 0.25)");
   } else {
     wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.275)), url('./Assets/night.png')";
-    // wallpaper.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Assets/night.jpg')";
     //changing the hexcode of var(--text-color) to white
     let textColor = document.querySelector(":root");
     textColor.style.setProperty("--text", "#cacaca");
